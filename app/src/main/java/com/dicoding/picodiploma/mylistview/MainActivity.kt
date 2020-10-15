@@ -1,5 +1,7 @@
 package com.dicoding.picodiploma.mylistview
 
+
+import HeroAdapter
 import android.content.res.TypedArray
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,9 +21,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val listView: ListView = findViewById(R.id.lv_list)
-        val adapter = ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, dataName)
+
+        adapter = HeroAdapter(this)
+
         listView.adapter = adapter
 
         prepare()

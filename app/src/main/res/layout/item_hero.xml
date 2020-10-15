@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+
     <ImageView
         android:id="@+id/img_photo"
         android:layout_width="100dp"
@@ -18,7 +19,7 @@
         android:layout_marginStart="26dp"
         android:layout_toEndOf="@id/img_photo"
         android:text="@string/name_heroes"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"/>
 
     <TextView
